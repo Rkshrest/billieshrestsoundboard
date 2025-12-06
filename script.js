@@ -1,8 +1,8 @@
 const sounds = {
-  clip1: new Audio("sounds/everything.mp3"),
-  clip2: new Audio("sounds/iloveyou.mp3"),
-  clip3: new Audio("sounds/the30th.mp3"),
-  clip4: new Audio("sounds/wildflower.mp3"),
+  clip1: new Audio("everything.mp3"),
+  clip2: new Audio("iloveyou.mp3"),
+  clip3: new Audio("the30th.mp3"),
+  clip4: new Audio("wildflower.mp3"),
 };
 
 const labels = {
@@ -67,3 +67,4 @@ muteBtn.addEventListener("click", () => {
   muteBtn.textContent = muted ? "Unmute" : "Mute";
   Object.values(sounds).forEach(a => a.volume = muted ? 0 : lastVol);
 });
+
